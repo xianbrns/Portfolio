@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+header {
+    background: #3F495B;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.navitems {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.10rem;
+    color: whitesmoke;
+}
+
+.navitems::after {
+    content:"";
+    width: 0;
+    height: 0.1rem;
+    background-color: whitesmoke;
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.navitems:hover:after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+header li {
+    list-style-type: none;
+}
+
+.logo {
+    color: white;
+    margin-left: 10%;
+}
+
+#prelims {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#prelims h2 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
